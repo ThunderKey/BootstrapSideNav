@@ -1,0 +1,112 @@
+body {
+  margin-left: 45px;
+}
+
+@keyframes showNav {
+  to { margin-left: -51px; }
+}
+@-moz-keyframes showNav {
+  to { margin-left: -51px; }
+}
+@-webkit-keyframes showNav {
+  to { margin-left: -51px; }
+}
+@-o-keyframes showNav {
+  to { margin-left: -51px; }
+}
+
+.nav-side {
+  position: fixed;
+  margin-left: -346px;
+}
+
+.nav-side:hover {
+  animation: showNav 0.5s forwards;
+  -moz-animation: showNav 0.5s forwards;
+  -webkit-animation: showNav 0.5s forwards;
+  -o-animation: showNav 0.5s forwards;
+}
+
+.nav-side.lighten { opacity: 0.5; }
+
+.nav-side.lighten:hover { opacity: 1; }
+
+.nav-side.hidden-icons:hover .nav-icon {
+  display: none;
+}
+
+.nav-side.hidden-icons:hover .nav-title {
+  margin-right: 14px;
+}
+
+.nav-side.front-icons:hover .nav-title {
+  float: right;
+  padding-left: 5px;
+}
+
+.nav-side.delayed:hover {
+  animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+}
+
+.nav-side > li {
+  background-color: white;
+}
+
+.nav-side > li a, .nav-side > li.empty {
+  padding-right: 10px;
+  overflow: auto;
+  vertical-align: middle;
+}
+
+.nav-side > li.active a,
+.nav-side > li.active a:hover {
+  color: white;
+  background-color: #08C;
+}
+
+.nav-side .nav-title {
+  width: 300px;
+  display: inline-block;
+  float: left;
+}
+
+.nav-side .nav-icon {
+  display: inline-block;
+  width: 14px;
+}
+
+.nav-side .dropdown-menu {
+  margin: -6px 0 0 -8px;
+}
+
+.nav-side > li.empty {
+  border: 1px solid #E5E5E5;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  line-height: 20px;
+}
+
+.nav-side  > li.nav-header {
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #E5E5E5;
+}
+
+.nav-side > li:first-child.nav-header {
+  border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+}
+
+.nav-side > li:last-child.nav-header {
+  border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -o-border-radius: 0 0 6px 6px;
+}
