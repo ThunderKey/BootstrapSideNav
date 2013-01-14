@@ -41,7 +41,11 @@ body {
 
 .nav-side.front-icons:hover .nav-title {
   float: right;
-  padding-left: 5px;
+}
+
+.nav-side.front-icons:hover .nav-icon {
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
 .nav-side.delayed:hover {
